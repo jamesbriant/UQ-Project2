@@ -140,7 +140,7 @@ GetKLDecomposition <- function(k=50, I=FALSE, J=FALSE, sigma2=1, nu=0.5, tau=1, 
   # IMPLEMENTATION
   ###########
   
-  C <- GenerateC(M, I)
+  C <- GenerateC(M, I, sigma2=sigma2, nu=nu, tau=tau, Lx=Lx, Ly=Ly)
   eigen.sol <- SolveEigenProblem(C, k)
   
   return(eigen.sol)
