@@ -18,7 +18,7 @@ y <- seq(0, 1, length=J)
 
 # Get the Karhunen-Loeve decomposition.
 # THIS IS *VERY* SLOW, but only needs running once.
-KLDecomp <- GetKLDecomposition(I=I, J=J)
+KLDecomp <- GetKLDecomposition(I=I, J=J, nu=0.5, sigma2=1, tau=1)
 
 # This generates new samples from the KL decomposition.
 # This function can be run as many times as you like, it's very quick. 
