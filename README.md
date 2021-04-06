@@ -1,5 +1,9 @@
 # UQ-Project2
 
+## How to use this code
+
+Set `/src` as the working directory within R studio. Then run each line of `GPExample.R` one at a time. (Or all at once if you like!)
+
 ## Required Packages
 
 ### RSpectra
